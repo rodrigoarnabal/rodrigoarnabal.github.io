@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: #20242a; background: #fbfaf7; font-family: Inter, system-ui, sans-serif; line-height: 1.65; }
+.container { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
+a { color: inherit; }
+.site-header { position: sticky; top: 0; z-index: 10; background: rgba(251,250,247,.94); border-bottom: 1px solid #e7e4de; backdrop-filter: blur(8px); }
+.nav { height: 68px; display: flex; align-items: center; justify-content: space-between; }
+.brand { font-weight: 700; text-decoration: none; letter-spacing: -.02em; }
+nav { display: flex; gap: 28px; }
+nav a { text-decoration: none; color: #62676e; font-size: .9rem; }
+nav a:hover, .text-link:hover, .contact-links a:hover, .paper a:hover { color: #111; }
+.hero { min-height: 610px; display: flex; align-items: center; padding: 90px 0 100px; }
+.eyebrow { margin: 0 0 18px; color: #777b80; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; font-weight: 600; }
+h1, h2, h3, h4 { margin-top: 0; }
+h1 { font-family: "Source Serif 4", Georgia, serif; font-size: clamp(3.3rem, 7vw, 6.2rem); line-height: .98; letter-spacing: -.055em; font-weight: 500; margin-bottom: 32px; }
+.lead { max-width: 690px; font-family: "Source Serif 4", Georgia, serif; font-size: clamp(1.3rem, 2vw, 1.65rem); line-height: 1.45; color: #4f545a; }
+.links { margin-top: 34px; display: flex; align-items: center; gap: 24px; }
+.button { display: inline-block; background: #20242a; color: #fff; padding: 10px 16px; border-radius: 4px; text-decoration: none; font-size: .85rem; font-weight: 600; }
+.text-link { text-decoration: none; font-size: .9rem; font-weight: 600; }
+.section { padding: 105px 0; border-top: 1px solid #e7e4de; }
+.two-col { display: grid; grid-template-columns: 1fr 2.1fr; gap: 70px; }
+h2 { font-family: "Source Serif 4", Georgia, serif; font-size: 2.4rem; line-height: 1.1; letter-spacing: -.03em; font-weight: 500; }
+.prose { max-width: 720px; font-family: "Source Serif 4", Georgia, serif; font-size: 1.12rem; color: #4f545a; }
+.prose p { margin: 0 0 22px; }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 30px; margin-bottom: 62px; }
+.section-heading p { color: #777b80; font-size: .9rem; }
+.research-group { margin-bottom: 70px; }
+.research-group:last-child { margin-bottom: 0; }
+h3 { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: #777b80; margin-bottom: 28px; }
+.paper { border-top: 1px solid #e7e4de; padding: 24px 0 25px; max-width: 850px; }
+.paper h4 { font-family: "Source Serif 4", Georgia, serif; font-size: 1.42rem; line-height: 1.3; font-weight: 500; margin-bottom: 8px; }
+.paper p { margin: 3px 0; color: #5d6268; font-size: .91rem; }
+.paper .venue { color: #777b80; font-style: italic; }
+.paper a { display: inline-block; margin-top: 8px; font-size: .8rem; font-weight: 600; text-decoration: none; }
+.featured { padding-left: 18px; border-left: 2px solid #20242a; }
+.contact { display: grid; grid-template-columns: 1fr 2.1fr; gap: 70px; align-items: start; }
+.contact-links { display: flex; flex-direction: column; gap: 13px; font-size: 1rem; }
+.contact-links a { text-decoration: none; width: fit-content; }
+.footer { border-top: 1px solid #e7e4de; padding: 35px 0 55px; color: #888c91; font-size: .75rem; }
+@media (max-width: 720px) {
+  .container { width: min(100% - 32px, 1080px); }
+  nav { display: none; }
+  .hero { min-height: 560px; padding: 70px 0; }
+  h1 { font-size: 3.5rem; }
+  .section { padding: 75px 0; }
+  .two-col, .contact { grid-template-columns: 1fr; gap: 25px; }
+  .section-heading { display: block; margin-bottom: 45px; }
+  .section-heading p { margin-top: -15px; }
+}
